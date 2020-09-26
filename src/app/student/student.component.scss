@@ -1,0 +1,48 @@
+#container-student-info {
+    height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 14px #00000080;
+        transition: ease-in-out .3s;
+        margin-bottom: 1rem;
+
+        &:hover {
+            box-shadow: 0 0 14px #000000ff;
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+    }
+
+    #container-about-student {
+        text-align: center;
+
+        h1 {
+            font: 500 1rem 'Roboto',sans-serif;
+
+            span {
+                font: 400 1rem 'Open Sans',sans-serif;
+            }
+        }
+    }
+
+    #container-info-note {
+        margin-top: 1rem;
+
+        h1 {
+            font: 500 1rem 'Roboto',sans-serif;
+            margin: .5rem 0;
+
+            span {
+                font: 400 1rem 'Open Sans',sans-serif;
+            }
+        }
+    }
+}

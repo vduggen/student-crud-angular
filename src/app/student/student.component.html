@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<article id="container-student-info">
+    <img [src]="studentInfo.avatar" alt="Avatar Student" />
+
+    <div id="container-about-student">
+        <h1>Nome: <span>{{studentInfo.name}}</span></h1>
+        <h1>Data Nascimento: <span>{{studentInfo.data_nascimento}}</span></h1>
+        <h1>Turma: <span>{{studentInfo.turma}}</span></h1>
+    </div>
+
+    <div id="container-info-note">
+        <h1>Nota1: <span>{{studentInfo.nota1}}</span></h1>
+        <h1>Nota2: <span>{{studentInfo.nota2}}</span></h1>
+        <h1>Nota3: <span>{{studentInfo.nota3}}</span></h1>
+        <h1>Média: <span>{{studentInfo.media}}</span></h1>
+    </div>
+</article>

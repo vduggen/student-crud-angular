@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<article>
+    <section class="column">
+        <h1>Primeiro Trimestre</h1>
+        <section class="container-alunos-home">
+            <section>
+                <ul>
+                    <li *ngFor="let student of students">
+                        <a routerLink="/estudante/{{student.id}}">{{student.name}}</a> - Nota {{student.nota1}}
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+   <section class="column">
+        <h1>Segundo Trimestre</h1>
+        <section class="container-alunos-home">
+            <section>
+                <ul>
+                    <li *ngFor="let student of students">
+                        <a routerLink="/estudante/{{student.id}}">{{student.name}}</a> - Nota {{student.nota2}}
+                    </li>
+                </ul>
+            </section>
+        </section>
+   </section>
+
+    <section class="column">
+        <h1>Terceiro Trimestre</h1>
+        <section class="container-alunos-home">
+            <section>
+                <ul>
+                    <li *ngFor="let student of students">
+                        <a routerLink="/estudante/{{student.id}}">{{student.name}}</a> - Nota {{student.nota3}}
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+</article>

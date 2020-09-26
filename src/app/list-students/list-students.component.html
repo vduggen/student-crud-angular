@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<section>
+    <h1>Lista Geral de Estudantes</h1>
+    <section class="container-alunos-home">
+        <section>
+            <ul>
+                <li *ngFor="let student of students">
+                    <a routerLink="/estudante/{{student.id}}">{{student.name}}</a> - Nota {{student.nota1}}
+                </li>
+            </ul>
+        </section>
+    </section>
+</section>
