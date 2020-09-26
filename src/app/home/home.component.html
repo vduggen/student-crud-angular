@@ -1,6 +1,10 @@
 <app-header></app-header>
 
-<article>
+<div *ngIf="loading === true">
+    <h1>Loading...</h1>
+</div>
+
+<article *ngIf="loading === false">
     <section class="column">
         <h1>Primeiro Trimestre</h1>
         <section class="container-alunos-home">

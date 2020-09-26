@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   students: Student[] = [];
   approved: object[] = [];
   disapproved: any[] = [];
+  loading: boolean = true;
 
   constructor(private alunos: AlunosService) { }
 
@@ -32,6 +33,8 @@ export class HomeComponent implements OnInit {
           this.disapproved.push(student);
         }
       })
+
+      this.loading = false;
     });
   }
 
